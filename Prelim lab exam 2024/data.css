@@ -1,0 +1,205 @@
+/* General Body and Background Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpaper.forfun.com/fetch/2e/2e5634b8b1422e714625dfd457a74b3c.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Container Styles */
+.container {
+    width: 60%;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    border-left: 6px solid #B2D6F2;
+    animation: slideUp 1s ease-in-out; /* Slide-in for the container */
+}
+
+/* Slide-in Animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #5A89C9;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #5a5a5a;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Input and Select Styles */
+input[type="text"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    border: 2px solid #B2D6F2;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #F3F7FB;
+    transition: border-color 0.3s ease;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #FFD88A;
+}
+
+/* Radio Button Styles */
+input[type="radio"] {
+    margin-right: 10px;
+    transition: transform 0.3s ease; /* Add slight scale effect */
+}
+
+input[type="radio"]:hover {
+    transform: scale(1.1);
+}
+
+.radio-label {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #5a5a5a;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+    background-color: #FFD88A;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    animation: bounceIn 2s ease-in-out; /* Bouncing effect for submit button */
+}
+
+/* Bounce Animation for Submit Button */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+input[type="submit"]:hover {
+    background-color: #FFB66A;
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+/* Link Styles */
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #5A89C9;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    color: #FFB66A;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+table, th, td {
+    border: 1px solid #E2E8F0;
+    transition: background-color 0.3s ease;
+}
+
+th {
+    background-color: #B2D6F2;
+    color: #2F4858;
+    padding: 14px;
+    font-size: 16px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+td {
+    padding: 12px;
+    text-align: left;
+    background-color: #F7FBFF;
+}
+
+tr:nth-child(even) {
+    background-color: #EDF2F7;
+}
+
+tr:hover {
+    background-color: #FFD88A; /* Row hover effect */
+    transition: background-color 0.3s ease;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+    }
+}
